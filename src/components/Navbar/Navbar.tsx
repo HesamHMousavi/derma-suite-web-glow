@@ -40,7 +40,7 @@ const Navbar = () => {
               DS
             </div>
             <span className="font-heading font-semibold text-xl lg:text-2xl">
-              Derma Suite Ltd
+              Derma Suite
             </span>
           </Link>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="tel:+44123456789"
+              href="tel:07454853335"
               className="btn-primary inline-flex items-center space-x-2"
             >
               <Phone className="w-4 h-4" />
@@ -104,7 +104,7 @@ const Navbar = () => {
               ))}
               <div className="pt-2">
                 <a
-                  href="tel:+44123456789"
+                  href="tel:07454853335"
                   className="btn-primary w-full justify-center inline-flex items-center space-x-2"
                   onClick={closeMobileMenu}
                 >

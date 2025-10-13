@@ -4,92 +4,124 @@ import { Check, Star, ArrowRight, Info } from 'lucide-react';
 const Pricing = () => {
   const pricingData = [
     {
-      category: 'Injectables',
+      category: 'Facials',
       treatments: [
-        { name: 'Anti-wrinkle Injections (1 area)', price: '£150-£200', popular: true },
-        { name: 'Anti-wrinkle Injections (2 areas)', price: '£250-£300' },
-        { name: 'Anti-wrinkle Injections (3 areas)', price: '£350-£400' },
-        { name: 'Dermal Filler (0.5ml)', price: '£200-£250' },
-        { name: 'Dermal Filler (1ml)', price: '£350-£450', popular: true },
-        { name: 'Dermal Filler (2ml)', price: '£650-£800' },
-        { name: 'Vitamin B12 Injection', price: '£35-£50' },
-        { name: 'Vitamin D Injection', price: '£40-£55' },
-        { name: 'Fat Dissolving (per session)', price: '£150-£250' },
+        { name: 'The Perfect Facial (1 hr)', price: '£35', popular: true },
+        { name: 'Hydro Facial & Serum (1 hr 30 mins)', price: '£85' },
+        { name: 'Million Dollar Facial (1 hr 30 mins)', price: '£85' },
+        { name: 'Add-on: Dermaplaning Serum', price: '£10' },
+        { name: 'Add-on: Serum', price: '£12' },
+        { name: 'Add-on: Microneedling', price: '£50' },
       ]
     },
     {
-      category: 'Laser & Light Treatments',
+      category: 'Anti-Wrinkle Injections',
       treatments: [
-        { name: 'Laser Hair Removal (small area)', price: '£80-£120' },
-        { name: 'Laser Hair Removal (medium area)', price: '£150-£200', popular: true },
-        { name: 'Laser Hair Removal (large area)', price: '£250-£350' },
-        { name: 'LED Therapy (single session)', price: '£45-£65' },
-        { name: 'LED Therapy (course of 6)', price: '£240-£300' },
+        { name: '1 Area', price: '£130', popular: true },
+        { name: '2 Areas', price: '£150' },
+        { name: '3 Areas', price: '£200' },
+        { name: 'Masseter (Face Slimming)', price: '£150' },
       ]
     },
     {
-      category: 'Facial Treatments',
+      category: 'Dermal Filler',
       treatments: [
-        { name: 'Chemical Peel (light)', price: '£80-£120' },
-        { name: 'Chemical Peel (medium)', price: '£150-£200' },
-        { name: 'Chemical Peel (deep)', price: '£250-£350' },
-        { name: 'Dermaplaning', price: '£65-£85', popular: true },
-        { name: 'The Perfect Facial', price: '£120-£180' },
-        { name: 'Mesotherapy (single session)', price: '£200-£300' },
-        { name: 'Mesotherapy (course of 3)', price: '£500-£750' },
+        { name: '0.5ml', price: '£100' },
+        { name: '1ml', price: '£140', popular: true },
+        { name: 'Russian Lips', price: '£150' },
+        { name: 'Jaw Contour', price: '£180' },
+        { name: 'Nasolabial', price: '£140' },
       ]
     },
     {
-      category: 'Specialized Treatments',
+      category: 'Fat Dissolving',
       treatments: [
-        { name: 'PRP Hair Restoration (single)', price: '£350-£450' },
-        { name: 'PRP Hair Restoration (course of 3)', price: '£900-£1200', popular: true },
-        { name: 'Consultation (redeemable)', price: '£50' },
-        { name: 'Patch Test', price: '£25' },
+        { name: 'Small Area - Chin, Jawline (30 mins)', price: '£50' },
+        { name: 'Large Area - Stomach, Thighs, Bingo Wings', price: '£150' },
+      ]
+    },
+    {
+      category: 'Vitamin Injections',
+      treatments: [
+        { name: 'Vitamin D', price: '£35' },
+        { name: 'Vitamin C', price: '£35' },
+        { name: 'Vitamin B12', price: '£20', popular: true },
+        { name: 'Glutathione (600mg)', price: '£50' },
+      ]
+    },
+    {
+      category: 'LED Therapy',
+      treatments: [
+        { name: 'The Perfect Facial & LED Therapy (1 hr 15 mins)', price: '£55', popular: true },
+      ]
+    },
+    {
+      category: 'Mesotherapy',
+      treatments: [
+        { name: 'Vitaran 1 (Eyes)', price: '£180' },
+        { name: 'Vitaran 1 (Eyes) - 4 treatments', price: '£680' },
+        { name: 'Vitaran 2 (Face)', price: '£230' },
+        { name: 'Vitaran 2 (Face) - 4 treatments', price: '£800' },
+        { name: 'Vitaran (Face & Eyes)', price: '£350' },
+        { name: 'Vitaran (Face & Eyes) - 4 treatments', price: '£1200', popular: true },
+      ]
+    },
+    {
+      category: 'PRP Treatments',
+      treatments: [
+        { name: 'PRP Undereyes', price: '£150' },
+        { name: 'PRP Undereyes - 4 sessions', price: '£520' },
+        { name: 'PRP Vampire Facial', price: '£170' },
+        { name: 'PRP Vampire Facial - 4 sessions', price: '£600' },
+        { name: 'PRP Hair Restoration - Hair Line (1 session)', price: '£120' },
+        { name: 'PRP Hair Restoration - Hair Line (4 sessions)', price: '£400' },
+        { name: 'PRP Hair Restoration - Full Head (1 session)', price: '£200' },
+        { name: 'PRP Hair Restoration - Full Head (4 sessions)', price: '£750', popular: true },
+        { name: 'PRP Microneedling - Vampire Facial', price: '£120' },
+        { name: 'PRP Microneedling - 4 sessions', price: '£430' },
       ]
     }
   ];
 
   const packages = [
     {
-      name: 'Maintenance Package',
-      description: 'Perfect for regular touch-ups',
-      price: '£299',
-      originalPrice: '£380',
+      name: 'Starter Package',
+      description: 'Perfect introduction to aesthetics',
+      price: '£165',
+      originalPrice: '£200',
       features: [
+        'The Perfect Facial',
         'Anti-wrinkle treatment (1 area)',
-        'Dermaplaning session',
-        'LED therapy session',
         'Free consultation',
-        'Priority booking'
+        'Aftercare advice'
       ],
       popular: false
     },
     {
-      name: 'Transformation Package',
-      description: 'Complete aesthetic refresh',
-      price: '£599',
-      originalPrice: '£750',
+      name: 'Refresh Package',
+      description: 'Complete facial rejuvenation',
+      price: '£260',
+      originalPrice: '£320',
       features: [
+        'Hydro Facial & Serum',
         'Anti-wrinkle treatment (2 areas)',
-        'Dermal filler (1ml)',
-        'The Perfect Facial',
-        'Chemical peel (light)',
-        'Free aftercare kit'
+        'Dermal filler (0.5ml)',
+        'Free vitamin injection',
+        'Priority booking'
       ],
       popular: true
     },
     {
-      name: 'Premium Package',
-      description: 'Ultimate luxury experience',
-      price: '£999',
-      originalPrice: '£1250',
+      name: 'Ultimate Package',
+      description: 'Premium transformation experience',
+      price: '£495',
+      originalPrice: '£615',
       features: [
+        'Million Dollar Facial',
         'Anti-wrinkle treatment (3 areas)',
-        'Dermal filler (2ml)',
-        'Mesotherapy course (3 sessions)',
-        'LED therapy course (6 sessions)',
-        'Free maintenance session'
+        'Dermal filler (1ml)',
+        'PRP Vampire Facial',
+        'Payment plan available'
       ],
       popular: false
     }
@@ -112,11 +144,11 @@ const Pricing = () => {
             </div>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent font-medium">
               <Check className="w-4 h-4 mr-2" />
-              Patch testing available
+              Payment plans available
             </div>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary border border-border font-medium">
               <Check className="w-4 h-4 mr-2" />
-              Flexible payment options
+              Book: 07454 853 335
             </div>
           </div>
         </div>
@@ -222,16 +254,16 @@ const Pricing = () => {
                       <strong>Consultation:</strong> All treatments include a free initial consultation where we assess your suitability and discuss expected outcomes.
                     </p>
                     <p>
-                      <strong>Patch Testing:</strong> Required for certain treatments including chemical peels and some injectables. Fee is deducted from treatment cost.
+                      <strong>Payment Plans:</strong> We offer flexible payment plans to make treatments more accessible. Ask us about available options when booking.
                     </p>
                     <p>
-                      <strong>Package Discounts:</strong> Save up to 20% when booking multiple treatments or courses. Ask about our loyalty program.
+                      <strong>Package Discounts:</strong> Save money when booking multiple treatments together. Our packages offer significant savings compared to individual treatments.
                     </p>
                     <p>
-                      <strong>Payment Options:</strong> We accept cash, card, and offer flexible payment plans for treatments over £500.
+                      <strong>Course Discounts:</strong> Multi-session courses (e.g., PRP, Mesotherapy) are priced to save you money versus single sessions.
                     </p>
                     <p>
-                      <strong>Cancellation:</strong> 48-hour notice required for cancellations. Same-day cancellations may incur a fee.
+                      <strong>Booking:</strong> Call us on 07454 853 335 or use our contact form. We're open Sunday-Friday 9am-6pm (Closed Saturdays).
                     </p>
                   </div>
                 </div>

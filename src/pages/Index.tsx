@@ -146,7 +146,7 @@ const Index = () => {
       <section className="section bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="heading-lg mb-4">Why Choose Derma Suite Ltd</h2>
+            <h2 className="heading-lg mb-4">Why Choose Derma Suite</h2>
             <p className="body-md text-muted-foreground max-w-2xl mx-auto">
               We combine medical expertise with artistic vision to deliver exceptional results 
               in a safe, professional environment.
@@ -211,7 +211,7 @@ const Index = () => {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
             <a 
-              href="tel:+44123456789" 
+              href="tel:07454853335" 
               className="bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/40 px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center justify-center"
             >
               Call Now

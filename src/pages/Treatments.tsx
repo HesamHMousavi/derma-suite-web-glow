@@ -4,23 +4,23 @@ import { ArrowRight, CheckCircle, Clock, AlertTriangle } from 'lucide-react';
 const Treatments = () => {
   const treatments = [
     {
-      id: 'laser-hair-removal',
-      title: 'Laser Hair Removal',
-      description: 'Advanced laser technology for permanent hair reduction with minimal discomfort.',
+      id: 'facials',
+      title: 'Facial Treatments',
+      description: 'Professional facial treatments combining advanced techniques for optimal skin health and radiance.',
       benefits: [
-        'Long-lasting results',
-        'Precision targeting',
-        'Suitable for all skin types',
-        'Minimal downtime'
+        'Improves skin texture and tone',
+        'Deep cleansing and hydration',
+        'Reduces fine lines and wrinkles',
+        'Enhances natural glow'
       ],
-      duration: '30-90 minutes',
+      duration: '60-90 minutes',
       downtime: 'None to minimal',
-      contraindications: 'Pregnancy, active infections, certain medications'
+      contraindications: 'Active skin infections, recent sunburn'
     },
     {
       id: 'anti-wrinkle',
       title: 'Anti-wrinkle Injections',
-      description: 'FDA-approved treatments to smooth fine lines and prevent new wrinkles from forming.',
+      description: 'FDA-approved treatments to smooth fine lines and prevent new wrinkles from forming naturally.',
       benefits: [
         'Smooths expression lines',
         'Prevents new wrinkles',
@@ -34,7 +34,7 @@ const Treatments = () => {
     {
       id: 'dermal-filler',
       title: 'Dermal Filler',
-      description: 'Hyaluronic acid fillers to restore volume and enhance facial contours naturally.',
+      description: 'Hyaluronic acid fillers to restore volume, enhance facial contours, and create beautiful natural results.',
       benefits: [
         'Restores facial volume',
         'Enhances lip shape',
@@ -46,65 +46,9 @@ const Treatments = () => {
       contraindications: 'Active infections, autoimmune conditions'
     },
     {
-      id: 'chemical-peels',
-      title: 'Chemical Peels',
-      description: 'Professional-grade peels to improve skin texture, tone, and clarity.',
-      benefits: [
-        'Improves skin texture',
-        'Reduces hyperpigmentation',
-        'Minimizes pore appearance',
-        'Stimulates collagen'
-      ],
-      duration: '30-45 minutes',
-      downtime: '3-7 days peeling',
-      contraindications: 'Active acne, recent sun exposure'
-    },
-    {
-      id: 'vitamin-injections',
-      title: 'Vitamin Injections',
-      description: 'Targeted vitamin therapy to boost energy, immunity, and overall wellness.',
-      benefits: [
-        'Boosts energy levels',
-        'Enhances immunity',
-        'Improves skin health',
-        'Fast absorption'
-      ],
-      duration: '15-20 minutes',
-      downtime: 'None',
-      contraindications: 'Vitamin allergies, certain medical conditions'
-    },
-    {
-      id: 'dermaplaning',
-      title: 'Dermaplaning',
-      description: 'Gentle exfoliation treatment removing dead skin cells and fine facial hair.',
-      benefits: [
-        'Smoother skin texture',
-        'Enhanced product absorption',
-        'Immediate glow',
-        'Makeup application improvement'
-      ],
-      duration: '30-45 minutes',
-      downtime: 'None',
-      contraindications: 'Active acne, skin infections'
-    },
-    {
-      id: 'prp-hair',
-      title: 'PRP – Hair Restoration',
-      description: 'Platelet-rich plasma therapy to stimulate natural hair growth and thickness.',
-      benefits: [
-        'Natural hair growth',
-        'Increased hair density',
-        'Improved scalp health',
-        'Minimal side effects'
-      ],
-      duration: '60-90 minutes',
-      downtime: 'Mild scalp tenderness',
-      contraindications: 'Blood disorders, recent medications'
-    },
-    {
       id: 'fat-dissolving',
-      title: 'Fat Dissolving Injections – Lemon Bottle',
-      description: 'Advanced fat dissolution treatment for targeted body contouring.',
+      title: 'Fat Dissolving Injections',
+      description: 'Advanced fat dissolution treatment for targeted body contouring and reduction of stubborn fat areas.',
       benefits: [
         'Targeted fat reduction',
         'Non-surgical approach',
@@ -116,9 +60,37 @@ const Treatments = () => {
       contraindications: 'Pregnancy, liver conditions'
     },
     {
+      id: 'vitamin-injections',
+      title: 'Vitamin Injections',
+      description: 'Targeted vitamin therapy to boost energy, immunity, and overall wellness with fast absorption.',
+      benefits: [
+        'Boosts energy levels',
+        'Enhances immunity',
+        'Improves skin health',
+        'Fast absorption'
+      ],
+      duration: '15-20 minutes',
+      downtime: 'None',
+      contraindications: 'Vitamin allergies, certain medical conditions'
+    },
+    {
+      id: 'led-therapy',
+      title: 'LED Therapy',
+      description: 'Advanced light therapy for various skin concerns and healing acceleration. Often combined with facials.',
+      benefits: [
+        'Accelerates healing',
+        'Reduces inflammation',
+        'Stimulates collagen',
+        'Pain-free treatment'
+      ],
+      duration: '20-30 minutes',
+      downtime: 'None',
+      contraindications: 'Pregnancy, certain medications'
+    },
+    {
       id: 'mesotherapy',
       title: 'Mesotherapy – Polynucleotides',
-      description: 'Regenerative treatment using polynucleotides for skin rejuvenation.',
+      description: 'Regenerative treatment using polynucleotides for deep skin rejuvenation and anti-aging benefits.',
       benefits: [
         'Deep skin hydration',
         'Collagen stimulation',
@@ -130,32 +102,18 @@ const Treatments = () => {
       contraindications: 'Active infections, allergies'
     },
     {
-      id: 'perfect-facial',
-      title: 'The Perfect Facial',
-      description: 'Customized facial treatment combining multiple techniques for optimal results.',
+      id: 'prp-treatments',
+      title: 'PRP Treatments',
+      description: 'Platelet-rich plasma therapy for hair restoration, facial rejuvenation, and undereye treatment using your own blood.',
       benefits: [
-        'Personalized approach',
-        'Multiple treatment benefits',
-        'Immediate improvement',
-        'Relaxing experience'
+        'Natural hair growth',
+        'Skin regeneration',
+        'Minimal side effects',
+        'Long-lasting improvements'
       ],
-      duration: '75-90 minutes',
-      downtime: 'None',
-      contraindications: 'Active skin conditions'
-    },
-    {
-      id: 'led-therapy',
-      title: 'LED Therapy',
-      description: 'Advanced light therapy for various skin concerns and healing acceleration.',
-      benefits: [
-        'Accelerates healing',
-        'Reduces inflammation',
-        'Stimulates collagen',
-        'Pain-free treatment'
-      ],
-      duration: '20-30 minutes',
-      downtime: 'None',
-      contraindications: 'Pregnancy, certain medications'
+      duration: '60-90 minutes',
+      downtime: 'Mild redness or tenderness',
+      contraindications: 'Blood disorders, recent medications'
     }
   ];
 
@@ -172,7 +130,7 @@ const Treatments = () => {
           </p>
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
             <AlertTriangle className="w-4 h-4 mr-2" />
-            All treatments include free consultation and patch testing where applicable
+            Free consultation included • Payment plans available
           </div>
         </div>
       </section>
@@ -256,21 +214,21 @@ const Treatments = () => {
               <h3 className="font-medium mb-2">How do I know which treatment is right for me?</h3>
               <p className="text-sm text-muted-foreground">
                 Every client receives a free consultation where we assess your skin, discuss your concerns, 
-                and recommend the most suitable treatments for your goals.
+                and recommend the most suitable treatments for your goals. Contact us on 07454 853 335 to book.
               </p>
             </div>
             <div className="card-subtle p-6 text-left">
-              <h3 className="font-medium mb-2">Are patch tests required?</h3>
+              <h3 className="font-medium mb-2">Do you offer payment plans?</h3>
               <p className="text-sm text-muted-foreground">
-                Patch tests are required for certain treatments including chemical peels and some injectable 
-                treatments. We'll advise you during your consultation.
+                Yes, we offer flexible payment plans to make treatments more accessible. Ask about our 
+                payment options when booking your consultation.
               </p>
             </div>
             <div className="card-subtle p-6 text-left">
               <h3 className="font-medium mb-2">How many sessions will I need?</h3>
               <p className="text-sm text-muted-foreground">
-                The number of sessions varies by treatment and individual response. We'll provide a 
-                personalized treatment plan during your consultation.
+                The number of sessions varies by treatment and individual response. We offer multi-session 
+                courses for treatments like PRP and Mesotherapy at discounted rates.
               </p>
             </div>
           </div>

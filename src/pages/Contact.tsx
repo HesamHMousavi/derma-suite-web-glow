@@ -17,16 +17,15 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const treatmentOptions = [
-    'Laser Hair Removal',
+    'The Perfect Facial',
+    'Hydro Facial & Serum',
+    'Million Dollar Facial',
     'Anti-wrinkle Injections',
     'Dermal Filler',
-    'Chemical Peels',
-    'Vitamin Injections',
-    'Dermaplaning',
-    'PRP – Hair Restoration',
     'Fat Dissolving Injections',
+    'Vitamin Injections',
     'Mesotherapy',
-    'The Perfect Facial',
+    'PRP Treatments',
     'LED Therapy',
     'General Consultation'
   ];
@@ -140,15 +139,15 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Beauty Street', 'London, SW1A 1AA'],
-      link: 'https://maps.google.com',
+      details: ['Hudson Avenue', 'BD7 3ND'],
+      link: 'https://maps.google.com/?q=Hudson+Avenue+BD7+3ND',
       linkText: 'Get Directions'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+44 123 456 789'],
-      link: 'tel:+44123456789',
+      details: ['07454 853 335'],
+      link: 'tel:07454853335',
       linkText: 'Call Now'
     },
     {
@@ -161,7 +160,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: 'Opening Hours',
-      details: ['Mon-Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 4:00 PM', 'Sun: Closed'],
+      details: ['Sun-Fri: 9:00 AM - 6:00 PM', 'Sat: Closed'],
       link: null,
       linkText: null
     }
@@ -362,7 +361,7 @@ const Contact = () => {
                       className="mt-1 h-4 w-4 text-primary border-border rounded focus:ring-primary focus:ring-offset-0"
                     />
                     <span className="text-sm text-muted-foreground">
-                      I consent to Derma Suite Ltd processing my personal data to respond to my inquiry. 
+                      I consent to Derma Suite processing my personal data to respond to my inquiry. 
                       Your data will be handled in accordance with our privacy policy. *
                     </span>
                   </label>
@@ -397,9 +396,9 @@ const Contact = () => {
                     <div className="text-center text-primary/60">
                       <MapPin className="w-16 h-16 mx-auto mb-4" />
                       <p className="font-medium">Interactive Map</p>
-                      <p className="text-sm mt-2">123 Beauty Street, London</p>
+                      <p className="text-sm mt-2">Hudson Avenue, BD7 3ND</p>
                       <a
-                        href="https://maps.google.com"
+                        href="https://maps.google.com/?q=Hudson+Avenue+BD7+3ND"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-4 inline-block btn-outline"
@@ -438,15 +437,15 @@ const Contact = () => {
         <div className="container text-center">
           <div className="max-w-2xl mx-auto card-elevated p-8">
             <h2 className="heading-md mb-4">Need Urgent Assistance?</h2>
-            <p className="body-md text-muted-foreground mb-6">
+              <p className="body-md text-muted-foreground mb-6">
               If you're experiencing any post-treatment concerns or need urgent advice, 
               we have a 24-hour emergency contact line for existing clients.
             </p>
             <a
-              href="tel:+44123456789"
+              href="tel:07454853335"
               className="btn-accent text-lg px-8 py-3"
             >
-              Emergency Contact: +44 123 456 789
+              Emergency Contact: 07454 853 335
             </a>
           </div>
         </div>

@@ -15,12 +15,12 @@ const Footer = () => {
   ];
 
   const treatments = [
-    'Laser Hair Removal',
+    'The Perfect Facial',
     'Anti-wrinkle Injections',
     'Dermal Filler',
-    'Chemical Peels',
+    'Fat Dissolving',
     'Vitamin Injections',
-    'PRP Hair Restoration',
+    'PRP Treatments',
   ];
 
   return (
@@ -34,8 +34,8 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
                 DS
               </div>
-              <span className="font-heading font-semibold text-xl">
-                Derma Suite Ltd
+            <span className="font-heading font-semibold text-xl">
+                Derma Suite
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -44,25 +44,22 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/dermasuite"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-white hover:text-white transition-colors"
                 aria-label="Follow us on Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/the_derma_suite?igsh=ODBmNnJyYm5oemk4"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-white hover:text-white transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-primary/10 hover:bg-primary rounded-full flex items-center justify-center text-white hover:text-white transition-colors"
-                aria-label="Follow us on Twitter"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -108,17 +105,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Beauty Street</p>
-                  <p className="text-gray-300">London, SW1A 1AA</p>
+                  <p className="text-gray-300">Hudson Avenue</p>
+                  <p className="text-gray-300">BD7 3ND</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+44123456789"
+                  href="tel:07454853335"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  +44 123 456 789
+                  07454 853 335
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -133,9 +130,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 4:00 PM</p>
-                  <p>Sun: Closed</p>
+                  <p>Sun-Fri: 9:00 AM - 6:00 PM</p>
+                  <p>Sat: Closed</p>
                 </div>
               </div>
             </div>
@@ -148,7 +144,7 @@ const Footer = () => {
         <div className="container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-300 text-sm text-center md:text-left">
-              © {currentYear} Derma Suite Ltd. All rights reserved.
+              © {currentYear} Derma Suite. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-gray-300 hover:text-white transition-colors">
