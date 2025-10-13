@@ -409,24 +409,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-6 space-y-4">
-                <div className="card-subtle p-4">
-                  <h3 className="font-medium mb-2">Parking Information</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Free parking available on-site. Street parking also available with 
-                    pay-and-display meters (£2/hour, max 3 hours).
-                  </p>
-                </div>
-                
-                <div className="card-subtle p-4">
-                  <h3 className="font-medium mb-2">Public Transport</h3>
-                  <p className="text-sm text-muted-foreground">
-                    2-minute walk from Beauty Lane Station (Central Line). 
-                    Bus routes 15, 23, and 139 stop directly outside.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

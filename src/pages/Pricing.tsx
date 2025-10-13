@@ -138,10 +138,6 @@ const Pricing = () => {
             consultation, treatment, and aftercare advice.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-medium">
-              <Check className="w-4 h-4 mr-2" />
-              Free consultation included
-            </div>
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 text-accent font-medium">
               <Check className="w-4 h-4 mr-2" />
               Payment plans available
