@@ -80,6 +80,21 @@ const Pricing = () => {
         { name: 'PRP Microneedling - Vampire Facial', price: '£120' },
         { name: 'PRP Microneedling - 4 sessions', price: '£430' },
       ]
+    },
+    {
+      category: 'Laser Hair Removal',
+      treatments: [
+        { name: 'Extra Small Area - Per session', price: '£20' },
+        { name: 'Extra Small Area - 6 sessions', price: '£110', popular: true },
+        { name: 'Small Area - Per session', price: '£35' },
+        { name: 'Small Area - 6 sessions', price: '£200' },
+        { name: 'Medium Area - Per session', price: '£45' },
+        { name: 'Medium Area - 6 sessions', price: '£250' },
+        { name: 'Large Area - Per session', price: '£55' },
+        { name: 'Large Area - 6 sessions', price: '£300' },
+        { name: 'Full Body - Per session', price: '£250' },
+        { name: 'Full Body - 8 sessions', price: '£1,499', popular: true },
+      ]
     }
   ];
 

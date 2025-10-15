@@ -114,6 +114,20 @@ const Treatments = () => {
       duration: '60-90 minutes',
       downtime: 'Mild redness or tenderness',
       contraindications: 'Blood disorders, recent medications'
+    },
+    {
+      id: 'laser-hair-removal',
+      title: 'Laser Hair Removal',
+      description: 'Advanced laser technology for safe, effective, and long-lasting hair removal on all body areas.',
+      benefits: [
+        'Permanent hair reduction',
+        'Smooth, hair-free skin',
+        'Suitable for all areas',
+        'Cost-effective long-term'
+      ],
+      duration: '15-90 minutes (area dependent)',
+      downtime: 'None',
+      contraindications: 'Pregnancy, recent sun exposure, certain skin conditions'
     }
   ];
 
