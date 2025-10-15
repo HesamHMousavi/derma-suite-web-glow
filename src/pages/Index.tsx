@@ -49,7 +49,7 @@ const Index = () => {
     {
       icon: Award,
       title: 'Qualified Clinicians',
-      description: 'All practitioners are medically qualified with advanced aesthetic training.'
+      description: 'All practitioners have advanced aesthetic training and expertise.'
     },
     {
       icon: Shield,

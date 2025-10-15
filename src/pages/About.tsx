@@ -201,8 +201,7 @@ const About = () => {
                   <div>
                     <h3 className="heading-sm mb-2">Qualified Practitioners</h3>
                     <p className="text-sm text-muted-foreground">
-                      All our practitioners are medically qualified with advanced training in 
-                      aesthetic procedures and ongoing professional development.
+                      All our practitioners have advanced training in aesthetic procedures and ongoing professional development.
                     </p>
                   </div>
                 </div>

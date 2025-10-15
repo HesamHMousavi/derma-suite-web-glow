@@ -33,11 +33,6 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Content */}
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-primary text-sm font-medium mb-6">
-              <Award className="w-4 h-4 mr-2" />
-              Award-Winning Aesthetics
-            </div>
-            
             <h1 className="heading-hero text-foreground mb-6">
               Welcome to{' '}
               <span className="text-6xl lg:text-7xl">

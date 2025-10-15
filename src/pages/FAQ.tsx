@@ -17,8 +17,8 @@ const FAQ = () => {
           answer: 'We combine medical expertise with artistic vision, using only medical-grade equipment and qualified practitioners. Our focus is on natural results, comprehensive consultations, and the highest safety standards. Every treatment is personalized to your individual needs and goals.'
         },
         {
-          question: 'Are all practitioners medically qualified?',
-          answer: 'Yes, all our practitioners are medically qualified with advanced training in aesthetic procedures. Our team includes doctors and registered nurses with specialized qualifications in cosmetic medicine and ongoing professional development.'
+          question: 'Are all practitioners qualified?',
+          answer: 'Yes, all our practitioners have advanced training in aesthetic procedures. Our team includes highly skilled professionals with specialized qualifications in cosmetic treatments and ongoing professional development.'
         },
         {
           question: 'Do I need a consultation before treatment?',
