@@ -35,13 +35,13 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-primary text-sm font-medium mb-6">
               <Award className="w-4 h-4 mr-2" />
-              Award-Winning Medical Aesthetics Clinic
+              Award-Winning Aesthetics
             </div>
             
             <h1 className="heading-hero text-foreground mb-6">
-              Transform Your
-              <span className="block bg-gradient-primary bg-clip-text text-transparent">
-                Natural Beauty
+              Welcome to
+              <span className="block bg-gradient-primary bg-clip-text text-transparent text-6xl lg:text-7xl">
+                Derma Suite
               </span>
             </h1>
             
@@ -76,15 +76,6 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
               <div className="aspect-[4/5] bg-gradient-primary opacity-10"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-primary/60">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Award className="w-12 h-12" />
-                  </div>
-                  <p className="font-medium">Professional Clinic Environment</p>
-                  <p className="text-sm mt-2">Modern, Safe & Comfortable</p>
-                </div>
-              </div>
             </div>
             
             {/* Floating Elements */}
