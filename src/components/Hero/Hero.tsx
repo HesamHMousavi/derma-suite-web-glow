@@ -30,9 +30,9 @@ const Hero = () => {
       </div>
 
       <div className="relative container py-20 lg:py-28">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto">
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-primary text-sm font-medium mb-6">
               <Award className="w-4 h-4 mr-2" />
               Award-Winning Aesthetics
@@ -45,12 +45,12 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className="body-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="body-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
               Discover the art of confidence with our advanced medical aesthetic treatments. Here at Derma Suite our highly skilled clinicians combine expertise with the latest technology to deliver safe, comfortable, and transformative results. From the moment you step into our care, you'll experience a personalised approach designed to enhance your natural beauty and leave you looking and feeling your absolute best.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link to="/contact" className="btn-primary text-lg px-8 py-4">
                 Book Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border max-w-2xl mx-auto">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
@@ -70,17 +70,6 @@ const Hero = () => {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Hero Image */}
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong">
-              <div className="aspect-[4/5] bg-gradient-primary opacity-10"></div>
-            </div>
-            
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-full opacity-10 animate-pulse"></div>
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary rounded-full opacity-5"></div>
           </div>
         </div>
       </div>
