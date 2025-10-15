@@ -39,8 +39,8 @@ const Hero = () => {
             </div>
             
             <h1 className="heading-hero text-foreground mb-6">
-              Welcome to
-              <span className="block bg-gradient-primary bg-clip-text text-transparent text-6xl lg:text-7xl">
+              Welcome to{' '}
+              <span className="bg-gradient-primary bg-clip-text text-transparent text-6xl lg:text-7xl">
                 Derma Suite
               </span>
             </h1>
