@@ -46,9 +46,7 @@ const Hero = () => {
             </h1>
             
             <p className="body-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Experience professional medical aesthetic treatments with our expert clinicians. 
-              Using cutting-edge technology in a safe, comfortable environment to deliver 
-              exceptional results you'll love.
+              Discover the art of confidence with our advanced medical aesthetic treatments. Here at Derma Suite our highly skilled clinicians combine expertise with the latest technology to deliver safe, comfortable, and transformative results. From the moment you step into our care, you'll experience a personalised approach designed to enhance your natural beauty and leave you looking and feeling your absolute best.
             </p>
 
             {/* CTA Buttons */}
