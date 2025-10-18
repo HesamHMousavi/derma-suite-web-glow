@@ -21,6 +21,7 @@ const Footer = () => {
     'Fat Dissolving',
     'Vitamin Injections',
     'PRP Treatments',
+    'Laser Hair Removal',
   ];
 
   return (
@@ -39,8 +40,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Professional medical aesthetic treatments in a safe, comfortable environment. 
-              Expert clinicians using cutting-edge technology for exceptional results.
+              Step into a world where outstanding service meets cutting-edge technology. 
+              Our expert clinicians use the most advanced machines to deliver results that are nothing short of exceptional. 
+              Every treatment is guided by precision, comfort, and genuine care — because your confidence deserves nothing less than the very best.
             </p>
             <div className="flex space-x-4">
               <a

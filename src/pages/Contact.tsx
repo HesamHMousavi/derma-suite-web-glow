@@ -27,6 +27,7 @@ const Contact = () => {
     'Mesotherapy',
     'PRP Treatments',
     'LED Therapy',
+    'Laser Hair Removal',
     'General Consultation'
   ];
 
@@ -387,27 +388,21 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div>
               <h2 className="heading-lg mb-6">Find Us</h2>
               <div className="card-elevated overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-subtle relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center text-primary/60">
-                      <MapPin className="w-16 h-16 mx-auto mb-4" />
-                      <p className="font-medium">Interactive Map</p>
-                      <p className="text-sm mt-2">Hudson Avenue, BD7 3ND</p>
-                      <a
-                        href="https://maps.google.com/?q=Hudson+Avenue+BD7+3ND"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 inline-block btn-outline"
-                      >
-                        Open in Google Maps
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.5!2d-1.7623!3d53.7974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDQ3JzUwLjYiTiAxwrA0NSc0NC4zIlc!5e0!3m2!1sen!2suk!4v1234567890"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Derma Suite Location - Hudson Avenue, BD7 3ND"
+                  className="w-full"
+                ></iframe>
               </div>
             </div>
           </div>
