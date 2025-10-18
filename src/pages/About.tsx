@@ -97,7 +97,7 @@ const About = () => {
                     <Users className="w-12 h-12" />
                   </div>
                   <p className="font-medium">Professional Team</p>
-                  <p className="text-sm mt-2">Qualified Medical Practitioners</p>
+                  <p className="text-sm mt-2">Expert Aesthetic Practitioners</p>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ const About = () => {
                 <div className="flex items-start space-x-4">
                   <Award className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="heading-sm mb-2">Qualified Practitioners</h3>
+                    <h3 className="heading-sm mb-2">Advanced Practitioners</h3>
                     <p className="text-sm text-muted-foreground">
                       All our practitioners have advanced training in aesthetic procedures and ongoing professional development.
                     </p>

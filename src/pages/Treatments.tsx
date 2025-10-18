@@ -177,28 +177,13 @@ const Treatments = () => {
 
                   {/* Treatment Details */}
                   <div className="space-y-6">
-                    {/* Duration & Downtime */}
-                    <div className="space-y-4">
-                      <div className="flex items-center space-x-3 p-3 bg-secondary rounded-lg">
-                        <Clock className="w-5 h-5 text-primary" />
-                        <div>
-                          <div className="font-medium text-sm">Duration</div>
-                          <div className="text-sm text-muted-foreground">{treatment.duration}</div>
-                        </div>
+                    {/* Duration */}
+                    <div className="flex items-center space-x-3 p-3 bg-secondary rounded-lg">
+                      <Clock className="w-5 h-5 text-primary" />
+                      <div>
+                        <div className="font-medium text-sm">Duration</div>
+                        <div className="text-sm text-muted-foreground">{treatment.duration}</div>
                       </div>
-                      <div className="flex items-center space-x-3 p-3 bg-secondary rounded-lg">
-                        <AlertTriangle className="w-5 h-5 text-accent" />
-                        <div>
-                          <div className="font-medium text-sm">Downtime</div>
-                          <div className="text-sm text-muted-foreground">{treatment.downtime}</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Contraindications */}
-                    <div className="p-4 bg-destructive/5 border border-destructive/20 rounded-lg">
-                      <h4 className="font-medium text-sm mb-2">Important Notes</h4>
-                      <p className="text-xs text-muted-foreground">{treatment.contraindications}</p>
                     </div>
 
                     {/* CTA Buttons */}

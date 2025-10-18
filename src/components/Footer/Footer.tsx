@@ -123,10 +123,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:info@dermasuite.co.uk"
+                  href="mailto:dermasuiteltd@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  info@dermasuite.co.uk
+                  dermasuiteltd@gmail.com
                 </a>
               </div>
               <div className="flex items-start space-x-3">

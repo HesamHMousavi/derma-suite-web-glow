@@ -154,8 +154,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@dermasuite.co.uk'],
-      link: 'mailto:info@dermasuite.co.uk',
+      details: ['dermasuiteltd@gmail.com'],
+      link: 'mailto:dermasuiteltd@gmail.com',
       linkText: 'Send Email'
     },
     {
