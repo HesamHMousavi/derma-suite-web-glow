@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/derma-suite-web-glow/", // ✅ required for GitHub Pages
+  base: "/", // ✅ required for GitHub Pages
   server: {
     host: "::",
     port: 3000,
