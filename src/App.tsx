@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,26 +14,57 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Error from "./pages/Error"; // your paused component
+import axios from "axios";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
+  useEffect(() => window.scrollTo(0, 0), [pathname]);
   return null;
 }
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
+async function checkStatus() {
+  try {
+    const res = await axios.post(
+      "https://admin.litwebs.co.uk/api/websites/status",
+      { url: "https://dermasuiteltd.com" }
+    );
+    return res.data?.data?.status === "live";
+  } catch {
+    return false; // or true if you want fail-open
+  }
+}
+
+function AppInner() {
+  const [isLive, setIsLive] = useState(true);
+  const [checking, setChecking] = useState(true);
+
+  useEffect(() => {
+    let mounted = true;
+
+    (async () => {
+      const live = await checkStatus();
+      if (mounted) {
+        setIsLive(live);
+        setChecking(false);
+      }
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+
+      {/* optional: while checking, you can render nothing or a small loader */}
+      {checking ? null : !isLive ? (
+        <Error />
+      ) : (
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1">
@@ -45,15 +76,24 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
         </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+      )}
+    </BrowserRouter>
+  );
+}
 
-export default App;
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <AppInner />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
